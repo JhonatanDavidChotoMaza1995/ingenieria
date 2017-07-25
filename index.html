@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PIZZERIA</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header><h1>PIZZERIA "PANUCHI"</h1></header>
+   <form action="factura.php" method="post" class="formulario">
+      <h5>INGRESE SUS DATOS INFORMATIVOS</h5>
+      Nombre:	&nbsp;	&nbsp;	&nbsp;<input type="text" name="nombre" required class="cajones"> <br>   
+    Dirección:	 &nbsp;<input type="text" name="direccion" required class="cajones"><br>
+    Teléfono: 	&nbsp;<input type="text" name="telefono" required class="cajones"><br><br>
+     
+     <h5>INGRESE EL TIPO DE PIZZA QUE DESEA</h5>
+     Personal: <input type="checkbox" name="personal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     Mediana: <input type="checkbox" name="mediana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     Familiar: <input type="checkbox" name="familiar"><br>
+     Cantidad:<select name="ctpersonal">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!-------------------------------->
+    Cantidad:<select name="ctmediana">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <!-------------------------------->
+    Cantidad:<select name="ctfamiliar">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    </select>
+    
+    <h5>INGRESE LA FORMA DE PAGO</h5>
+        Efectivo<input type="radio" name="pago" value="efectivo" checked>
+        Tarjeta<input type="radio" name="pago" value="tarjeta"><br>
+        
+     
+     <h5>FECHA DE PEDIDO</h5>
+    <input type="date" name="fecha" required> <br><br>
+    
+    <input type="submit" value="Confirmar" class="boton">
+
+   </form>
+    
+</body>
+</html>
